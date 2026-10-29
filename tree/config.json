@@ -1,0 +1,11 @@
+{
+  "user": "Akshat-Kumar-dot",
+  "title": "Akshat-Kumar-dot",
+  "projects": "auto",
+  "max_projects": 3,
+  "exclude": ["Akshat-Kumar-dot", "Note-Rag", "MLF."],
+  "max_files": 6,
+  "root_files": ["README.md", "byakshat.in"],
+  "output": "tree.webp",
+  "readme": "README.md"
+}
