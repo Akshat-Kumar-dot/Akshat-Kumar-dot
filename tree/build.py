@@ -32,7 +32,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 
 # ---------------- look (see RULES.md) ----------------
-W, H = 1280, 760
+W, H = 1280, 660
 FPS = 15
 P, DOT = 4, 3                                  # 4 px cells painted as 3 px dots
 PAGE = (13, 17, 23)                            # #0D1117

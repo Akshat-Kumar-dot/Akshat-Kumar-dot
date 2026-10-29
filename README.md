@@ -1,5 +1,4 @@
 # Hi, I'm Akshat Kumar 👋
-
 <img src="tree.webp" width="100%" alt="My GitHub projects drawn as a file tree" />
 
 
