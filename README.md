@@ -38,7 +38,7 @@ I kept pasting lecture notes into chatbots and getting answers that weren't in t
 
 Upload a research paper or a UPI receipt and get back the fields a form asks for: authors, affiliations, ORCID, amount, UTR. Each one is marked Verified, Check or Review, with the line it was read from. OCR runs on the server itself; no file leaves it.
 
-<sub>Python · Tesseract OCR · SQLite / Postgres · Chrome extension</sub>
+
 
 </td>
 <td width="33%" valign="top">
@@ -47,7 +47,6 @@ Upload a research paper or a UPI receipt and get back the fields a form asks for
 
 Two real SUMO simulations on the same routes and seed: one on the junction's fixed timer, one driven live by a trained Q-learning agent. A control-room view plays them side by side, with live queues and wait times.
 
-<sub>Python · SUMO / TraCI · Docker</sub>
 
 </td>
 </tr>
@@ -57,7 +56,7 @@ Two real SUMO simulations on the same routes and seed: one on the junction's fix
 
 <img src="https://skillicons.dev/icons?i=py,ts,js,c,react,nextjs,vite,tailwind,fastapi,postgres,sqlite,mongodb,docker,cloudflare&theme=dark" alt="Python, TypeScript, JavaScript, C, React, Next.js, Vite, Tailwind, FastAPI, Postgres, SQLite, MongoDB, Docker, Cloudflare" />
 
-<sub>also: Gemini · embeddings · Tesseract OCR · scikit-learn · NumPy · Streamlit · SUMO / TraCI · MapLibre · Render</sub>
+
 
 ### `~/now`
 
