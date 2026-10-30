@@ -1,7 +1,7 @@
 ## Hi, I'm Akshat Kumar 👋
 <sub>Software & AI developer from India · <a href="https://byakshat.in">byakshat.in</a></sub>
 
-<img src="tree.webp" width="100%" alt="My GitHub projects drawn as a file tree" />
+<img src="literal-tree.webp" width="100%" alt="A pixel-art file tree growing out of my repos: Notes_Rag opens down to backend/app/rag, then Abstract-Mind opens to extension" />
 
 I build software and AI tools that show their work. My notes assistant links every sentence of an answer to the passage it came from, and my document reader marks which fields you should double-check before you trust them. If a tool can't back something up, it should say so.
 
@@ -28,8 +28,6 @@ I build software and AI tools that show their work. My notes assistant links eve
 **[Notes_Rag](https://github.com/Akshat-Kumar-dot/Notes_Rag)** · [live ↗](https://notes-rag.akshat-kumar-singh05.workers.dev)
 
 I kept pasting lecture notes into chatbots and getting answers that weren't in them. This one answers only from your own files, links every sentence to its passage, and says so when your notes don't cover the question.
-
-
 </td>
 <td width="33%" valign="top">
 
@@ -66,4 +64,4 @@ Two real SUMO simulations on the same routes and seed: one on the junction's fix
 
 [byakshat.in](https://byakshat.in) · [akshat.kumar.singh05@gmail.com](mailto:akshat.kumar.singh05@gmail.com)
 
-<sub>Tree design credit: <a href="https://x.com/FinnoTaylor/status/2112286571999428676">FinnoTaylor on X</a>, who made the original "literal file tree". This is my own version of the idea, drawn from my repos.</sub>
+<sub>Tree design credit: <a href="https://x.com/FinnoTaylor/status/2112286571999428676">FinnoTaylor on X</a>, who made the original "literal file tree". The banner recreates his animation, relabelled with my repos.</sub>
