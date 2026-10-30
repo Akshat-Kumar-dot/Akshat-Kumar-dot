@@ -3,7 +3,7 @@
 <picture>
   <source srcset="literal-tree.avif" type="image/avif" />
   <img src="literal-tree.webp" width="100%" alt="A pixel-art file tree growing out of my repos: Notes_Rag opens down to backend/app/rag, then Abstract-Mind opens to extension" />
-</picture>
+</picture>\
 
 I build software and AI tools that show their work. My notes assistant links every sentence of an answer to the passage it came from, and my document reader marks which fields you should double-check before you trust them. If a tool can't back something up, it should say so.
 
