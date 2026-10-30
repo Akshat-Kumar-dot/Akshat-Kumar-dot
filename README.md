@@ -1,5 +1,4 @@
 ## Hi, I'm Akshat Kumar 👋
-<sub>Software & AI developer from India · <a href="https://byakshat.in">byakshat.in</a></sub>
 
 <picture>
   <source srcset="literal-tree.avif" type="image/avif" />
