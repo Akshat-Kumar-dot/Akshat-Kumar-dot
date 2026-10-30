@@ -3,9 +3,20 @@
   "title": "Akshat-Kumar-dot",
   "projects": "auto",
   "max_projects": 3,
-  "exclude": ["Akshat-Kumar-dot", "Note-Rag", "MLF."],
+  "exclude": [
+    "Akshat-Kumar-dot",
+    "Note-Rag",
+    "MLF."
+  ],
   "max_files": 6,
   "root_files": ["README.md", "byakshat.in"],
   "output": "tree.webp",
-  "readme": "README.md"
+  "readme": "README.md",
+  "readme_projects": [
+    ["Abstract-Mind", "reads a paper or a UPI receipt and fills the form for you"],
+    ["Notes_Rag", "answers only from your notes, every sentence cited"],
+    ["Traffix", "a Q-learning traffic light vs the fixed timer, in SUMO"],
+    ["geoexplore", "ranks manganese exploration ground for MOIL (SIH 2026)"],
+    ["PaddyWise", "paddy yield prediction, stacking model built in NumPy"]
+  ]
 }

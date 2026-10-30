@@ -18,6 +18,7 @@ Options: --still out.png [seconds]   render one frame
 Set GITHUB_TOKEN to avoid the API's anonymous rate limit.
 """
 import bisect
+import html
 import json
 import math
 import os
@@ -689,18 +690,28 @@ class Movie:
         return img
 
 
-# ---------------- README links ----------------
+# ---------------- README project listing ----------------
 def update_readme(cfg, projects):
+    """Writes the projects as `tree` output with clickable names, between the
+    <!-- tree:projects --> markers. Lines come from config "readme_projects"
+    ([name, one line] pairs); without it, the animated projects are listed."""
     path = os.path.join(ROOT, cfg.get("readme", "README.md"))
     if not os.path.exists(path):
         return
+    user = cfg["user"]
+    rows = cfg.get("readme_projects") or [[p["name"], ""] for p in projects]
+    pad = max(len(name) + 1 for name, _ in rows + [["README.m", ""]]) + 3
+    lines = [f'<a href="https://github.com/{user}">{user}</a>/']
+    for name, line in rows:
+        link = f'<a href="https://github.com/{user}/{name}">{name}/</a>'
+        lines.append(f"├── {link}{' ' * (pad - len(name) - 1)}{html.escape(line)}")
+    lines.append(f"└── README.md{' ' * (pad - 9)}you are here")
+    block = "<!-- tree:projects -->\n<pre>\n" + "\n".join(lines) + "\n</pre>\n<!-- /tree:projects -->"
     text = open(path, encoding="utf-8").read()
-    links = " · ".join(f"[{p['name']}](https://github.com/{cfg['user']}/{p['name']})" for p in projects)
-    block = f"<!-- tree:projects -->\n{links}\n<!-- /tree:projects -->"
-    new = re.sub(r"<!-- tree:projects -->.*?<!-- /tree:projects -->", block, text, flags=re.S)
+    new = re.sub(r"<!-- tree:projects -->.*?<!-- /tree:projects -->", lambda _: block, text, flags=re.S)
     if new != text:
         open(path, "w", encoding="utf-8", newline="\n").write(new)
-        print("  README project links updated")
+        print("  README project listing updated")
 
 
 def main():
@@ -713,6 +724,9 @@ def main():
         projects = fetch(cfg)
         json.dump(projects, open(cache, "w", encoding="utf-8"), indent=1)
     projects = projects[: cfg.get("max_projects", 4)]
+    if "--readme" in sys.argv:                       # only refresh the README listing
+        update_readme(cfg, projects)
+        return
     print("projects:", ", ".join(f"{p['name']} (+{p['sub']})" for p in projects))
     movie = Movie(cfg, projects)
     print(f"loop: {movie.duration:.1f}s, {len(movie.world.cells)} cells")
