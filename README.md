@@ -29,7 +29,6 @@ I build software and AI tools that show their work. My notes assistant links eve
 
 I kept pasting lecture notes into chatbots and getting answers that weren't in them. This one answers only from your own files, links every sentence to its passage, and says so when your notes don't cover the question.
 
-<sub>Next.js (React) · FastAPI · Postgres + pgvector · Gemini · MongoDB</sub>
 
 </td>
 <td width="33%" valign="top">
